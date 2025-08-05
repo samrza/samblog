@@ -20,12 +20,12 @@ body {
   font-family: "Geist", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background: #ffffff;
-  color: rgb(15, 23, 42);
+  background: #000000;
+  color: white;
 }
 
 a {
-  color: #374151;
+  color: #303640;
   text-decoration: underline;
 }
 a:hover {
@@ -69,7 +69,7 @@ a:hover {
   margin-right: 14px;
   font-weight: 450;
   font-size: 0.95rem;
-  color: #000000;
+  color: white;
   text-decoration: underline;
   transition: text-decoration 0.3s ease;
 }
@@ -117,7 +117,7 @@ a:hover {
   font-weight: 500; /* Slightly bold (not too heavy) */
   margin-right: 10px;
   font-size: 0.95rem;
-  color: #000000; /* Optional: a slightly deeper gray for distinction */
+  color: white; /* Optional: a slightly deeper gray for distinction */
 }
 
 .social-links a {
@@ -125,7 +125,7 @@ a:hover {
   font-weight: 400;
   font-size: 0.95rem;
   text-decoration: underline;
-  color: #374151;
+  color: white;
 }
 .social-links a:hover {
   text-decoration: none;
@@ -134,7 +134,7 @@ a:hover {
 /* Articles */
 .articles p {
   margin-top: 3rem;
-  color: #000000;
+  color: white;
 }
 
 .article-list {
@@ -155,7 +155,7 @@ a:hover {
 }
 
 .article-item a {
-  color: black;
+  color: white;
   text-decoration: underline;
   font-weight: 400;
 }
