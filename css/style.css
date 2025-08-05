@@ -1,8 +1,24 @@
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/Geist-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/Geist-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/Geist-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+
 body {
   margin: 0;
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 600;
+  font-family: "Geist", sans-serif;
+  font-weight: 400;
   font-style: normal;
   background: #ffffff;
   color: rgb(15, 23, 42);
@@ -81,7 +97,7 @@ a:hover {
 
 /* About */
 .about {
-  font-weight: normal;
+  font-weight: 400;
 }
 .about p {
   margin-bottom: 10px;
