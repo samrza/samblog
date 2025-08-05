@@ -176,7 +176,7 @@ a:hover {
 .section-title {
   font-size: 16px;
   font-weight: 600;
-  color: #000000;
+  color: white;
   margin-bottom: 1.5rem;
   margin-top: 3rem;
   padding-left: 0.25rem;
@@ -250,12 +250,12 @@ footer {
   font-size: 0.9rem;
 }
 .footer-links a {
-  color: rgb(71, 85, 105);
+  
   margin-top: 2rem;
   margin-right: 14px;
   font-weight: 450;
   font-size: 0.8rem;
-  color: #000000;
+  color: white;
   text-decoration: underline;
   transition: text-decoration 0.3s ease;
 }
