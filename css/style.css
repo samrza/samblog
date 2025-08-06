@@ -25,7 +25,7 @@ body {
 }
 
 a {
-  color: #303640;
+  color: white;
   text-decoration: underline;
 }
 a:hover {
@@ -340,7 +340,7 @@ footer p {
 .pages-title {
   font-size: 36px;
   font-weight: 800;
-  color: rgb(17, 24, 39);
+  color: white;
   margin-bottom: 1.5rem;
   margin-top: 5rem;
   padding-left: 0.25rem;
@@ -374,7 +374,7 @@ footer p {
 }
 
 .book-title {
-  color: #111827;
+  color: white;
   font-weight: 500;
   font-size: 0.95rem;
   margin: 4px 0 2px;
