@@ -197,14 +197,14 @@ a:hover {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 0;
+  padding: 5px;
   transition: outline 0.2s ease, box-shadow 0.2s ease;
   outline: none; /* no outline by default */
 }
 
 .card:hover {
-  outline: 1px dashed #374151; /* adds space outside the card */
-  outline-offset: 6px; /* gives that gap effect */
+   
+  cursor: pointer;
 }
 
 /* Image style */
