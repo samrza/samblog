@@ -1,81 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Desk Setup | Sameer Raza</title>
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #fdfdfd;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    .desk-container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      margin-bottom: 1rem;
-    }
-    .desk-photo {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    }
-    .journey-block {
-      background: white;
-      padding: 1rem 1.5rem;
-      border-radius: 8px;
-      margin-bottom: 1.5rem;
-      border-left: 4px solid #000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    .journey-year {
-      display: block;
-      font-weight: bold;
-      font-size: 1.1rem;
-      margin-bottom: 0.3rem;
-      color: #444;
-    }
-    .closing-note {
-      margin-top: 2rem;
-      font-style: italic;
-      background: #f4f4f4;
-      padding: 1rem;
-      border-radius: 8px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Desk • Sam</title>
+  <link href="https://unpkg.com/@geist/font/geist.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
 </head>
 <body>
+  <div class="container">
+    <!-- Navbar -->
+    <header class="navbar">
+      <a href="../index.html" class="logo">
+        <img src="../images/dp.jpg" alt="SR Logo" class="logo-img" />
+      </a>
+      <nav class="nav-links">
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="writing.html">Writings</a>
+        <a href="reading.html">Reading</a>
+        <a href="resume.html">Resume</a>
+        <a href="desk.html" class="active">Desk</a>
+      </nav>
+    </header>
 
-  <div class="desk-container">
-    <h1>My Desk Setup</h1>
-    <p>A little corner of the internet where I share my current work setup and the story behind it — from a bare table to a space that fuels my indie dev grind.</p>
+    <!-- Desk Timeline -->
+    <section class="desk-timeline">
+      <h1>My Desk Journey</h1>
+      <p class="timeline-intro">
+        A little visual history of my workspace setups — from hostel tables to my current desk.
+      </p>
 
-    <!-- Current Desk Photo -->
-    <img src="images/current-desk.jpg" alt="My Desk Setup" class="desk-photo">
+      <div class="timeline">
 
-    <!-- Journey Timeline -->
-    <div class="journey-block">
-      <span class="journey-year">2019 — The Beginning</span>
-      <p>A plastic chair, a second-hand laptop that sounded like a jet engine, and a borrowed mouse. My desk was the kitchen table, my hours — unpredictable.</p>
-    </div>
+        <!-- Example Desk 1 -->
+        <div class="timeline-item">
+          <img src="../images/desk-2022.jpg" alt="Desk 2022" />
+          <h3>2022 – Hostel Desk</h3>
+          <p>Just my old laptop and a noisy fan. The place where I first started coding late at night.</p>
+        </div>
 
-    <div class="journey-block">
-      <span class="journey-year">2021 — First Upgrade</span>
-      <p>Got a small wooden desk and a budget monitor. Still working late nights, still chasing the first paying client. The setup was humble, but it felt like progress.</p>
-    </div>
+        <!-- Example Desk 2 -->
+        <div class="timeline-item">
+          <img src="../images/desk-2023.jpg" alt="Desk 2023" />
+          <h3>2023 – First Upgrade</h3>
+          <p>Got an external monitor and a better chair. Huge productivity boost.</p>
+        </div>
 
-    <div class="journey-block">
-      <span class="journey-year">2023 — Going All In</span>
-      <p>Invested in a proper ergonomic chair, dual monitors, and a mechanical keyb
+        <!-- Example Desk 3 -->
+        <div class="timeline-item">
+          <img src="../images/desk-2025.jpg" alt="Desk 2025" />
+          <h3>2025 – Current Setup</h3>
+          <p>Minimal, clean, with a good keyboard and enough space for reading & building projects.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Sameer Raza</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -3,60 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Sam • Resume</title>
+  <title>Resume • Sam</title>
   <link href="https://unpkg.com/@geist/font/geist.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="../images/favicon.png">
   <link rel="stylesheet" href="../css/style.css" />
-  <style>
-    /* Minimal resume-specific styling */
-    .resume-container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 2rem 1rem;
-      font-family: 'Geist', sans-serif;
-      line-height: 1.6;
-    }
-    .resume-header {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-    .resume-header h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    .resume-header p {
-      color: #555;
-    }
-    .resume-section {
-      margin-bottom: 2rem;
-    }
-    .resume-section h2 {
-      font-size: 1.25rem;
-      margin-bottom: 0.5rem;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 0.25rem;
-    }
-    .job, .project {
-      margin-bottom: 1rem;
-    }
-    .job-title, .project-title {
-      font-weight: 600;
-    }
-    .job-meta, .project-meta {
-      font-size: 0.9rem;
-      color: #666;
-    }
-    ul {
-      margin: 0.5rem 0 0 1rem;
-    }
-    a {
-      color: #0070f3;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+
+  <!-- PDF Export Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 </head>
 <body>
   <div class="container">
@@ -66,108 +19,84 @@
         <img src="../images/dp.jpg" alt="SR Logo" class="logo-img" />
       </a>
       <nav class="nav-links">
-        <a href="../pages/about.html">About</a>
-        <a href="../pages/project.html">Projects</a>
-        <a href="../pages/writing.html">Writings</a>
-        <a href="../pages/reading.html">Reading</a>
-        <a href="../pages/resume.html" class="active">Resume</a>
+        <a href="about.html">About</a>
+        <a href="project.html">Projects</a>
+        <a href="writing.html">Writings</a>
+        <a href="reading.html">Reading</a>
+        <a href="resume.html" class="active">Resume</a>
+        <a href="desk.html">Desk</a>
       </nav>
     </header>
 
     <!-- Resume Content -->
-    <main class="resume-container">
-      <div class="resume-header">
-        <h1>Sameer Raza</h1>
-        <p>
-          Fullstack Indie Developer • India<br>
-          <a href="mailto:Sameerofficial@gmail.com">Sameerofficial@gmail.com</a> • 
-          <a href="tel:+91987654321">+91 987654321</a><br>
-          <a href="https://samrza.github.io/samblog/" target="_blank">samrza.github.io/samblog</a> • 
-          <a href="https://github.com/samrza" target="_blank">GitHub</a> • 
-          <a href="https://linkedin.com/sam" target="_blank">LinkedIn</a>
-        </p>
-      </div>
+    <section id="resume" class="resume-section">
+      <h1>Sameer Raza</h1>
+      <p class="resume-sub">Fullstack Indie Developer • CS Student</p>
 
-      <section class="resume-section">
-        <h2>Summary</h2>
-        <p>
-          Indie fullstack developer with 3+ years of experience building
-          lightweight web apps, side projects, and tools for creators. I focus
-          on clean UI, fast performance, and minimal budgets — working solo from
-          concept to deployment.
-        </p>
-      </section>
+      <hr />
 
-      <section class="resume-section">
-        <h2>Experience</h2>
+      <h2>Education</h2>
+      <p><b>Bachelor of Computer Science</b> – XYZ University (2021–2025)</p>
 
-        <div class="job">
-          <div class="job-title">Freelance Fullstack Developer</div>
-          <div class="job-meta">Remote • 2022 – Present</div>
-          <ul>
-            <li>Built and deployed 15+ small-scale web apps for indie founders and NGOs.</li>
-            <li>Specialized in Next.js, Tailwind CSS, and Supabase for rapid development.</li>
-            <li>Implemented SEO strategies that increased organic traffic by up to 300%.</li>
-          </ul>
-        </div>
+      <h2>Skills</h2>
+      <ul>
+        <li>Languages: Java, Python, JavaScript</li>
+        <li>Web: HTML, CSS, Node.js, React</li>
+        <li>Databases: MySQL, MongoDB</li>
+        <li>Tools: Git, Linux, Docker</li>
+      </ul>
 
-        <div class="job">
-          <div class="job-title">Open Source Contributor</div>
-          <div class="job-meta">GitHub • 2023 – Present</div>
-          <ul>
-            <li>Contributed to accessibility improvements for popular React libraries.</li>
-            <li>Maintained small utility packages downloaded 10k+ times/month.</li>
-          </ul>
-        </div>
-      </section>
+      <h2>Experience</h2>
+      <p><b>Indie Developer</b> – Building and shipping personal projects</p>
+      <p><b>Intern</b> – Software Development at ABC Company</p>
 
-      <section class="resume-section">
-        <h2>Projects</h2>
-        <div class="project">
-          <div class="project-title">ReserveMyTrip</div>
-          <div class="project-meta">
-            <a href="https://reservemytrip.in" target="_blank">reservemytrip.in</a>
-          </div>
-          <p>Travel agency site for booking tours, built with Next.js and Tailwind CSS.</p>
-        </div>
-        <div class="project">
-          <div class="project-title">Wall Street Playboys Archive</div>
-          <div class="project-meta">
-            <a href="https://wsp-archive.vercel.app/" target="_blank">wsp-archive.vercel.app</a>
-          </div>
-          <p>Archived original writings from the Wall Street Playboys blog.</p>
-        </div>
-      </section>
+      <h2>Projects</h2>
+      <ul>
+        <li><b>ReserveMyTrip</b> – Travel booking web app</li>
+        <li><b>WallStreetPlayboys Archive</b> – Digital archive site</li>
+      </ul>
 
-      <section class="resume-section">
-        <h2>Skills</h2>
-        <ul>
-          <li>Frontend: HTML, CSS, Tailwind CSS, JavaScript, React, Next.js</li>
-          <li>Backend: Node.js, Express, Supabase, Firebase</li>
-          <li>Tools: Git, Vercel, Figma, Notion</li>
-        </ul>
-      </section>
+      <h2>Contact</h2>
+      <p>Email: sameer4uofficial@gmail.com</p>
+      <p>GitHub: github.com/samrza</p>
+      <p>X: x.com/samrza_</p>
+    </section>
 
-      <section class="resume-section">
-        <h2>Education</h2>
-        <p>
-          B.Tech in Computer Science — Sharda University (2024 – 2028)
-        </p>
-      </section>
-    </main>
+    <!-- Export Button -->
+    <div class="export-btn-container">
+      <button id="exportPDF" class="btn">Export as PDF</button>
+    </div>
 
     <!-- Footer -->
     <footer>
-      <div class="footer-links">
-        <a href="https://github.com/samrza" target="_blank">GitHub</a>
-        <a href="https://x.com/samrza_" target="_blank">X</a>
-        <a href="#" target="_blank">RSS</a>
-        <a href="../pages/now.html" target="_blank">Now</a>
-        <a href="mailto:Sameerofficial@gmail.com" target="_blank">Contact</a>
-        <a href="https://www.instagram.com/samrza_/" target="_blank">Instagram</a>
-      </div>
-      <p>© 2022 – 2025 Sameer Raza</p>
-    </footer>
+        <div class="footer-links">
+          <a href="https://github.com/samrza/" target="_blank">GitHub</a>
+          <a href="https://x.com/samrza_" target="_blank">X</a>
+          <a href="#" target="_blank">RSS</a>
+          <a href="/pages/now.html" target="_blank">Now</a>
+          <a href="mailto:sameer4uofficial@gmail.com" target="_blank"
+            >Contact</a
+          >
+          <a href="https://www.instagram.com/samrza_/" target="_blank"
+            >Instagram</a
+          >
+        </div>
+        <p>© 2022 – 2025 Sameer Raza</p>
+      </footer>
   </div>
+
+  <script>
+    document.getElementById("exportPDF").addEventListener("click", () => {
+      const element = document.getElementById("resume");
+      const opt = {
+        margin:       0.5,
+        filename:     'Sameer_Raza_Resume.pdf',
+        image:        { type: 'jpeg', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(opt).from(element).save();
+    });
+  </script>
 </body>
 </html>
