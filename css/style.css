@@ -92,6 +92,7 @@ a:hover {
 
 .hero h1 {
   margin-bottom: 0.6rem; /* very small gap below the title */
+  color: #09ff00;
 }
 
 .hero-subtext {
