@@ -4,32 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reading • Sam</title>
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="icon" type="image/x-icon" href="../images/favicon.png" />
+
     <style>
-      .book-list {
-        list-style: none;
-        padding: 0;
-        margin-top: 1rem;
+      /* Book Grid */
+      .book-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 20px;
+        margin-top: 1.5rem;
       }
 
-      .book-list li {
-        margin-bottom: 8px;
-      }
-
-      .book-list a {
+      .book-card {
         text-decoration: none;
         color: white;
-        font-size: 1rem;
+        text-align: center;
       }
 
-      /* .book-list a:hover {
-  text-decoration: underline;
-} */
+      .book-card img {
+        width: 95%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+        margin-bottom: 0.5rem;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .book-card:hover img {
+        transform: scale(1.05);
+      }
+
+      .book-title {
+        font-size: 0.9rem;
+        font-weight: 200;
+        margin: 0;
+      }
+
+      .book-author {
+        font-size: 0.75rem;
+        color: #94a3b8;
+        margin-top: 2px;
+      }
     </style>
   </head>
+
   <body>
     <div class="container">
+
       <!-- Navbar -->
       <header class="navbar">
         <a href="../index.html" class="logo">
@@ -39,472 +62,91 @@
           <a href="about.html">About</a>
           <a href="project.html">Projects</a>
           <a href="writing.html">Writings</a>
-          <!-- <a href="reading.html">Reading</a> -->
         </nav>
       </header>
 
       <!-- Page Title -->
       <h1 class="pages-title">Reading</h1>
+
       <p class="pages-des">
-        These are some of the books I’ve read or am currently reading — spanning
-        fiction, non-fiction, and everything in between. Books are fuel for both
-        thought and downtime. in today's digital time i am more shifting towards
-        books to away from chaotic world.
-      </p>
-      <p class="pages-des">
-        <a href="../writings/How I select which book i have to read.html"
-          >How I select which book i have to read.</a
-        >
+        These are some of the books I’ve read or am currently reading — spanning fiction, non-fiction, and everything in between. Books are fuel for both thought and downtime. in today's digital time i am more shifting towards books to away from chaotic world. 
       </p>
 
-      <!-- <p>
-        - on clicking book cover you can read my book notes & summary (if i have
-        written)
-      </p> -->
-      <div class="book-list">
-        <h3>➤ bookList -</h3>
-        <p><a href="">Animal Farm - George Orwell</a></p>
-        <p>
-          <a href="" style="color: rgb(0, 255, 89)"
-            >The Almanack Of Naval Ravikant - Eric Jorgenson</a
-          >
-        </p>
-        <p>
-          <a href=""
-            >How to win Friends and influence people - Dale Carnegie
-          </a>
-        </p>
-        <p><a href="">Atomic Habits - James Clear</a></p>
-        <p><a href="">Buddha - Osamu Tezuka</a></p>
-        <p>
-          <a href="" style="color: rgb(0, 255, 89)"
-            >Why We Sleep - Matthew Walker</a
-          >
-        </p>
-      </div>
-      <div class="book-list">
-        <h3>➤ toRead :</h3>
-        <p>
-          <a href="">Deep Work - Cal Newport</a>
-        </p>
-        <p><a href="">Efficiency - BowTiedBull</a></p>
-        <p>
-          <a href=""> The Burnout Society - Byung-Chul Han</a>
-        </p>
-        <p>
-          <a href="">The Denial of Death - Ernest Becker</a>
-        </p>
-        <p>
-          <a href="">The War of Art - Steven Pressfield</a>
-        </p>
-        <p>
-          <a href="">Life Nomadic - Tynan</a>
-        </p>
-        <p>
-          <a href="">Forever Nomad- Tynan</a>
-        </p>
-         <p>
-          <a href="">Superhuman Social Skills- Tynan</a>
-        </p>
-        <p>
-          <a href="">Hell Yeah or No - Derek Sivers</a>
-        </p>
-      </div>
+      <p class="pages-des">
+        <a href="../writings/How I select which book i have to read.html">
+          How I select which book to read.
+        </a>
+      </p>
 
-      <!-- Fiction Section -->
+      <!-- Book Grid -->
+      <h3 style="margin-top: 2rem; font-weight: 600">bookList</h3>
 
-      <!-- <h2 class="section-title">Fiction</h2>
-      <div class="book-grid"> -->
-      <!-- <a href="#" class="book-link">
-          <img
-            src="../images/siddharthahesse.jpg"
-            alt="siddhartha by herman hesse "
-            class="book-cover"
-          />
-          <p class="book-title">Siddhartha</p>
-          <p class="book-author">Hermann Hesse</p>
-        </a> -->
-      <!-- <a href="../writings/why-we-sleep-notes.html" class="book-link">
-          <img
-            src="../images/vagabonding.jpg"
-            alt="Vagabonding"
-            class="book-cover"
-          />
-          <p class="book-title">Vagabonding</p>
-          <p class="book-author">Rolf Potts</p>
-        </a> -->
-      <!-- <a href="../writings/why-we-sleep-notes.html" class="book-link">
-          <img
-            src="../images/1984.jpg"
-            alt="1984 by geroge orwell"
-            class="book-cover"
-          />
-          <p class="book-title">1984</p>
-          <p class="book-author">George Orwell</p>
-        </a> -->
-      <!-- <a href="../writings/why-we-sleep-notes.html" class="book-link">
-          <img
-            src="../images/animalfarm.jpg"
-            alt="animal farm by geroge orwell"
-            class="book-cover"
-          />
+      <div class="book-grid">
+
+        <a href="#" class="book-card">
+          <img src="../images/animalfarm.jpg" alt="Animal Farm" />
           <p class="book-title">Animal Farm</p>
           <p class="book-author">George Orwell</p>
-        </a> -->
-      <!-- <a href="../writings/why-we-sleep-notes.html" class="book-link">
-          <img
-            src="../images/buddha-osamu.jpg"
-            alt="buddha illustrative by osamu tezuka"
-            class="book-cover"
-          />
-          <p class="book-title">Buddha</p>
-          <p class="book-author">Osamu Tezuka</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/geurillawarfare.jpg"
-            alt=" Guerrilla Warfare by  Ernesto Che Guevara "
-            class="book-cover"
-          />
-          <p class="book-title">Guerrilla Warfare</p>
-          <p class="book-author">Ernesto Che Guevara</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/theprophetbygibran.jpg"
-            alt=" the prophet by kahlil gibran "
-            class="book-cover"
-          />
-          <p class="book-title">The Prophet</p>
-          <p class="book-author">Kahlil Gibran</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/alchemist.jpg"
-            alt=" alchemist by paulo coelho "
-            class="book-cover"
-          />
-          <p class="book-title">The Alchemist</p>
-          <p class="book-author">Paulo Coelho</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/crimeand punishment.jpg"
-            alt=" crime and punishment by Crime & Punishment "
-            class="book-cover"
-          />
-          <p class="book-title">Crime & Punishment</p>
-          <p class="book-author">Fyodor Dostoyevsky</p>
-        </a> -->
+        </a>
 
-      <!--
-  <a href="#" class="book-link">
-    <img src="https://covers.openlibrary.org/b/id/8228691-L.jpg" alt="1984" class="book-cover" />
-    <p class="book-title">1984</p>
-    <p class="book-author">George Orwell</p>
-  </a>
-  -->
-      <!-- </div> -->
-
-      <!-- Non-Fiction Section -->
-      <!-- <h2 class="section-title">Non-Fiction</h2>
-      <div class="book-grid"> -->
-      <!-- <a href="#" class="book-link">
-          <img
-            src="../images/Anti-Dump's Machine.png"
-            alt="Anti-Dump Machine"
-            class="book-cover"
-          />
-          <p class="book-title">Anti-Dump Machine</p>
-          <p class="book-author">Anti-Dump & Pook</p>
-        </a> -->
-
-      <!-- <a href="#" class="book-link">
-          <img
-            src="../images/bookofpook.jpg"
-            alt="Book of Pook"
-            class="book-cover"
-          />
-          <p class="book-title">Book of Pook</p>
-          <p class="book-author">Pook</p>
-        </a> -->
-
-      <!-- <a href="../writings/the-manipulated-man.html" class="book-link">
-          <img
-            src="../images/themanipulatedmancover.png"
-            alt="The Manipulated Man"
-            class="book-cover"
-          />
-          <p class="book-title">The Manipulated Man</p>
-          <p class="book-author">Esther Vilar</p>
-        </a> -->
-      <!-- <a href="../writings/why-we-sleep-notes.html" class="book-link">
-          <img
-            src="../images/whywesleep.jpg"
-            alt="Why We Sleep"
-            class="book-cover"
-          />
-          <p class="book-title">Why We Sleep</p>
-          <p class="book-author">Matthew Walker</p>
-        </a> -->
-
-      <!-- <a href="../writings/the-art-of-war-notes.html" class="book-link">
-          <img
-            src="../images/thewarofart.jpg"
-            alt="The War of Art"
-            class="book-cover"
-          />
-          <p class="book-title">The War of Art</p>
-          <p class="book-author">Steven Pressfield</p>
-        </a> -->
-      <!-- <a href="../writings/the-prince-notes.html" class="book-link">
-          <img
-            src="../images/theprince.jpg"
-            alt="The Prince"
-            class="book-cover"
-          />
-          <p class="book-title">The Prince</p>
-          <p class="book-author">Nicollo Machiavelli</p>
-        </a> -->
-
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/howtowinfriends.png"
-            alt="How To Win Friend And Influence People"
-            class="book-cover"
-          />
-          <p class="book-title">How To Win Friend And Influence People</p>
-          <p class="book-author">Dale Carnegie</p>
-        </a> -->
-      <!-- <a href="../writings/the-prince-notes.html" class="book-link">
-          <img
-            src="../images/grokkingsalgorithm.jpg"
-            alt="Manning Publications Grokking Algorithms: An illustrated guide for programmers "
-            class="book-cover"
-          />
-          <p class="book-title">Grokking Algorithms</p>
-          <p class="book-author">Aditya Bhargava</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/denialdeath.jpg"
-            alt="The Denial Of Death"
-            class="book-cover"
-          />
-          <p class="book-title">The Denial Of Death</p>
-          <p class="book-author">Ernest Becker</p>
-        </a> -->
-
-      <!-- <div class="book-list">
-          <a
-            href="../writings/how-to-win-friends-carnegie.html"
-            class="book-item"
-          >
-            <p class="book-title">How to Win Friends and Influence People</p>
-            <p class="book-author">Dale Carnegie</p>
-          </a>
-
-          <a href="../writings/deepwork.html" class="book-item">
-            <p class="book-title">Deep Work</p>
-            <p class="book-author">Cal Newport</p>
-          </a>
-
-          <a href="../writings/atomic-habits.html" class="book-item">
-            <p class="book-title">Atomic Habits</p>
-            <p class="book-author">James Clear</p>
-          </a>
-        </div> -->
-
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/pathlesspath.jpg"
-            alt="The Pathless Path"
-            class="book-cover"
-          />
-          <p class="book-title">The Pathless Path</p>
-          <p class="book-author">Paul Millerd</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/tfreedommodel.jpg"
-            alt="The Pathless Path"
-            class="book-cover"
-          />
-          <p class="book-title">The Freedom Model</p>
-          <p class="book-author">
-            Steven Slate, Mark W Scheeren, Michelle L Dunbar
-          </p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/easypeasy.png"
-            alt="The Pathless Path"
-            class="book-cover"
-          />
-          <p class="book-title">EasyPeasy Method</p>
-          <p class="book-author">Hackauthor²</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/make.jpg"
-            alt="The Pathless Path"
-            class="book-cover"
-          />
-          <p class="book-title">Make</p>
-          <p class="book-author">Pieter Levels</p>
-        </a> -->
-
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/deepwork.jpg"
-            alt="Deep Work by cal newport "
-            class="book-cover"
-          />
-          <p class="book-title">Deep Work</p>
-          <p class="book-author">Cal Newport</p>
-        </a> -->
-
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/fooledbyrandomness.png"
-            alt="fooled by randomness by Nassim Nicholas Taleb "
-            class="book-cover"
-          />
-          <p class="book-title">Fooled by Randomness</p>
-          <p class="book-author">Nassim Nicholas Taleb</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/antifragile.jpg"
-            alt="antifragile by nasim talebt "
-            class="book-cover"
-          />
-          <p class="book-title">Antifragile</p>
-          <p class="book-author">Nassim Nicholas Taleb</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/theblackswan.jpg"
-            alt="the black swab by nasim taleb "
-            class="book-cover"
-          />
-          <p class="book-title">The Black Swan</p>
-          <p class="book-author">Nassim Nicholas Taleb</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/meditationmarcus.jpg"
-            alt="Meditation by marcus aurelius "
-            class="book-cover"
-          />
-          <p class="book-title">Meditation</p>
-          <p class="book-author">Marcus Aurelius</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/nudge.jpg"
-            alt="nudge by Richard H. Thaler & Cass R. Sunstein"
-            class="book-cover"
-          />
-          <p class="book-title">NUDGE</p>
-          <p class="book-author">Richard H. Thaler & Cass R. Sunstein</p>
-        </a> -->
-      <!-- <a
-          href="../writings/how-to-win-friends-carnegie.html
-        "
-          class="book-link"
-        >
-          <img
-            src="../images/almanck of naval.jpg"
-            alt="nudge by Richard H. Thaler & Cass R. Sunstein"
-            class="book-cover"
-          />
+        <a href="#" class="book-card">
+          <img src="../images/almanack-naval.jpg" alt="Naval Almanack" />
           <p class="book-title">The Almanack Of Naval Ravikant</p>
           <p class="book-author">Eric Jorgenson</p>
-        </a> -->
-      <!-- </div> -->
+        </a>
+
+        <a href="#" class="book-card">
+          <img src="../images/howtowinfriends.png" alt="How to Win Friends" />
+          <p class="book-title">How to Win Friends</p>
+          <p class="book-author">Dale Carnegie</p>
+        </a>
+
+        <a href="#" class="book-card">
+          <img src="../images/atomichabits.jpg" alt="Atomic Habits" />
+          <p class="book-title">Atomic Habits</p>
+          <p class="book-author">James Clear</p>
+        </a>
+
+        <a href="#" class="book-card">
+          <img src="../images/buddha-osamu.jpg" alt="Buddha" />
+          <p class="book-title">Buddha</p>
+          <p class="book-author">Osamu Tezuka</p>
+        </a>
+
+        <a href="#" class="book-card">
+          <img src="../images/whywesleep.jpg" alt="Why We Sleep" />
+          <p class="book-title">Why We Sleep</p>
+          <p class="book-author">Matthew Walker</p>
+        </a>
+
+      </div>
+
+      <!-- To Read -->
+      <h3 style="margin-top: 3rem; font-weight: 600">toRead</h3>
+
+      <ul class="book-list" style="margin-top: 1rem">
+        <li><a href="#">Deep Work — Cal Newport</a></li>
+        <li><a href="#">Efficiency — BowTiedBull</a></li>
+        <li><a href="#">The Burnout Society — Byung-Chul Han</a></li>
+        <li><a href="#">The Denial of Death — Ernest Becker</a></li>
+        <li><a href="#">The War of Art — Steven Pressfield</a></li>
+        <li><a href="#">Life Nomadic — Tynan</a></li>
+        <li><a href="#">Forever Nomad — Tynan</a></li>
+        <li><a href="#">Superhuman Social Skills — Tynan</a></li>
+        <li><a href="#">Hell Yeah or No — Derek Sivers</a></li>
+      </ul>
 
       <!-- Footer -->
       <footer>
         <div class="footer-links">
           <a href="https://github.com/samrza/" target="_blank">GitHub</a>
           <a href="https://x.com/samrza_" target="_blank">Twitter</a>
-          <a href="/pages/micro-blog.html">Microblog</a>
-          <!-- <a href="#" target="_blank">RSS</a> -->
-          <a href="now.html" target="_blank">Now</a>
-          <a href="mailto:sameer4uofficial@gmail.com" target="_blank"
-            >Contact</a
-          >
-          <!-- <a href="https://www.instagram.com/samrza_/" target="_blank"
-            >Instagram</a
-          > -->
+          <a href="micro-blog.html">Microblog</a>
+          <a href="mailto:sameer4uofficial@gmail.com" target="_blank">Contact</a>
         </div>
         <p>© 2022 – 2025 Sameer Raza</p>
       </footer>
+
     </div>
   </body>
 </html>
