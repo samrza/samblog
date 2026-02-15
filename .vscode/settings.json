@@ -1,8 +1,3 @@
 {
-  "editor.formatOnSave": true,
-  "liveServer.settings.port": 5501,
-  "editor.fontSize": 12,
-  "editor.rulers": [],
-  "editor.renderLineHighlight": "line",
-  "workbench.colorCustomizations": {}
+    "liveServer.settings.port": 5501
 }
